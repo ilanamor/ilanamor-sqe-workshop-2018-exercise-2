@@ -11,13 +11,19 @@
 
             .textAreaWrapper {
                 width: 100%;
-                height: 80vh;
+                height: 55vh;
+            }
+
+            .argsAreaWrapper {
+                width: 100%;
+                height: 10vh;
             }
 
             textarea {
                 width: 80%;
                 height: 95%;
             }
+
         </style>
     </head>
     <body>
@@ -30,7 +36,7 @@
                 </td>
                 <td>
                     <div>
-                        <label>Parsed code here</label>
+                        <label>substituted code here</label>
                     </div>
                 </td>
             </tr>
@@ -41,9 +47,16 @@
                     </div>
                 </td>
                 <td>
-                    <div class="textAreaWrapper">
-                        <textarea id="parsedCode" title="Parse code"></textarea>
+                    <div id="substitution"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="argsAreaWrapper">
+                        <textarea id="argsPlaceholder" title="Enter args here"></textarea>
                     </div>
+                </td>
+                <td>
                 </td>
             </tr>
             <tr>
